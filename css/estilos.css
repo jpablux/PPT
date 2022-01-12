@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(43, 43, 43);
+}
+
+.Main-container h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(226, 226, 226); 
+    margin-bottom: 30px;
+    line-height: 42px;
+}
+
+.Main-container .instructions{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color:rgb(110, 110, 110);
+    line-height: 32px;
+} 
+
+.piedra{
+    width: 150px;
+    height: 150px;
+    background-image: url(../img/piedra.svg); 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(59, 137, 255);
+    border-radius: 10px;
+    opacity: .5;
+}
+
+.papel{
+    width: 150px;
+    height: 150px;
+    background-image: url(../img/papel.svg); 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(59, 137, 255);
+    border-radius: 10px;
+    opacity: .5;
+}
+
+
+
+.tijera{
+    width: 150px;
+    height: 150px;
+    background-image: url(../img/tijera.svg); 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(59, 137, 255);
+    border-radius: 10px;
+    opacity: .5;
+}
+
+.papel:hover, .tijera:hover, .piedra:hover{
+    background-color: rgb(89, 0, 255);
+    opacity: 1;
+}
+
+.choices{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.result-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    text-align: center;
+}
+
+.Main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 150px;
+    text-align: center;
+}
+
+.resultado{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;  
+}
+
+
+
+.image-loss{
+    width: 150px;
+    background-color: rgb(255, 84, 61);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.image-win{
+    width: 150px;
+    background-color: rgb(75, 253, 119);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#resultadoPiedra{
+    display: none;
+}
+
+#resultadoPapel{
+    display: none;
+}
+
+
+.resultado_texto{
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    
+}
+
+@media screen and (max-width: 600px){
+
+    .piedra, .papel, .tijera{
+        width: 80px;
+        height: 80px;
+        background-size: contain; 
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .Main-container{
+        margin:10px;
+        padding-top: 150px;
+        align-items: center;
+        vertical-align: bottom;
+    }
+
+    .Main-container p{
+        font-size: 12px;
+    }
+
+    .Main-container h1{
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+}
